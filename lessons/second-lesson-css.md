@@ -503,6 +503,12 @@ The animation will last for 3 seconds as defined with the property `animation-du
 }
 ```
 
+That's it for this second lesson! Bravo! 👏 👏 👏
+
+Now you have the content and styles for your personal website. 🎉 🎉 🎉
+
+In the next lesson we will learn JavaScript.
+
 
 
 
