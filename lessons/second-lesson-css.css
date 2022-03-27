@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Sora;
+    src: url(./fonts/Sora-Regular.ttf);
+}
+@font-face {
+    font-family: SoraBold;
+    src: url(./fonts/Sora-Bold.ttf);
+}
+
+body {
+    font-family: Sora;
+    background-color: FFF2F8;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+#banner {
+    background-image: url(./assets/baner.png);
+    background-position: center;
+    background-size: cover;
+    font-family: SoraBold;
+}
+
+#avatar-image {
+    max-width: 25rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#banner-center {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: center;
+    padding: 0 200;
+}
+
+#interests {
+    display: flex;
+    justify-content: space-around;
+}
+
+#short-description {
+    text-align: center;
+}
+
+#content {
+    padding: 0 300;
+}
+
+.center-horizontal-line {
+    border-bottom: .1rem solid #e3426d;
+}
+
+.center-vertical-line {
+    border-right: .1rem solid #e3426d;
+}
+
+.text-emphasize {
+    color: #e3426d;
+    font-family: SoraBold;
+}
+
+.text-tag {
+    background-color: #e3426d;
+    color: white;
+    padding: 5px;
+    margin: 5 0;
+    display: inline-block;
+    letter-spacing: 0.1vw;
+    position: relative;
+
+    /* ADVANCED ANIMATIONS */
+    animation-name: change-tag-background;
+    animation-duration: 3s;
+    top: 0;
+}
+
+/* ADVANCED ANIMATIONS */
+@keyframes change-tag-background {
+    from {
+        background-color: #f7cad0;
+        top: -20;
+    }
+    to {
+        background-color: #e3426d;
+        top: 0;
+    }
+}
+
+.text-highlight {
+    background: linear-gradient(180deg, #f7cad0 70%, #e3426d 30%);
+}
