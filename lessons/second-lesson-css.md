@@ -17,9 +17,9 @@ In this lesson, you will learn to change the font, apply styles and position HTM
 
 Create a new file in Visual Studio Code and name it `index.css`. In this newly created file, you will write the code that is necessary to style the HTML elements you created in the first lesson. 
 
-Since, the CSS code is in different file than the HTML code, you will need to connect these two together. You can do that by creating a reference to the `index.css` file inside you `index.html`. You can do that with the help of the `<link>` tag.
+Since, the CSS code is in different file than the HTML code, you will need to connect these two together. You can do that by creating a reference to the `index.css` file inside your `index.html`. You can do that with the help of the `<link>` tag.
 
-The `<link>` tag accepts an attribute called `href` that you can use to set the path to the `index.css` file.
+The `<link>` tag accepts an attribute called `href` which you can use to set the path to the `index.css` file.
 
 Copy the following HTML tags inside the `<head>` tag.
 
@@ -31,10 +31,12 @@ Copy the following HTML tags inside the `<head>` tag.
 
 ## CSS selectors
 
-In order to apply a certain style to your HTML elements, you first need to locate that HTML element in your website. The way we do it is by using CSS selectors. We will have a look at three CSS selectors.
+In order to apply a certain style to an HTML element, you first need to locate that element in your website. The way we locate HTML elements is by using CSS selectors. 
 
-1. `id` selectors
-    You can use this selector if the HTML element you want to style has the `id` attribute. The style will apply to this element only.
+We will have a look at three CSS selectors.
+
+1. `id` selector
+    You can use this selector if the HTML element you want to style has the `id` attribute. The style will ONLY apply to the HTML element that has this id.
 
     ```HTML
     <div id="content">
@@ -47,8 +49,8 @@ In order to apply a certain style to your HTML elements, you first need to locat
     }
     ```
 
-2. `class` selectors
-    You can use this selector if the HTML element you want to style has the `class` attribute. The style will apply to all elements that have this class. 
+2. `class` selector
+    You can use this selector if the HTML element you want to style has the `class` attribute. The style will apply to all HTML elements that have this class. 
 
     ```HTML
     <div class="content">
@@ -61,10 +63,10 @@ In order to apply a certain style to your HTML elements, you first need to locat
     }
     ```
 
-3. element selectors
+3. `element` selector
     You can use this selector if you want to style a group of the same type of HTML elements. For example, if you want to style all headings, or all links, or all images, etc.
 
-    Let's say that you want to set the color of all h1 headings on your website to be black. You can do something like this:
+    Let's say that you want to set the color of all `h1` headings on your website to be black. You can do something like this:
 
     ```CSS
     h1 {
@@ -72,7 +74,7 @@ In order to apply a certain style to your HTML elements, you first need to locat
     }
     ```
 
-    Or, to set all headings to black, you can do this:
+    Or, to set all headings from `h1` to `h6` to black, you can do this:
 
     ```CSS
     h1, h2, h3, h4, h5, h6 {
@@ -84,13 +86,13 @@ If you want to learn more about CSS selectors, [here](https://www.freecodecamp.o
 
 ### Font
 
-You can easily apply a different font to your whole website if you set the `font-family` CSS property. For example, in the code below 
+You can easily apply a different font to your whole website if you set the `font-family` CSS property.
 
 ```CSS
 font-family: Arial;
 ```
 
-If you want to create a custom font that is not supported by default, you will need to create a `font-family` first and the set the `font-family` CSS property. 
+If you want to create a custom font that is not supported by the browser you are using by default, you will need to create a font family first and then set the `font-family` CSS property. 
 
 ### 📝 Task
 
@@ -98,7 +100,7 @@ In Visual Studio Code, create a folder named `fonts`. Go to [Google Fonts](https
 
 Copy the font files in the newly creatd `fonts` folder.
 
-You can create a `font-family` by using the CSS `@font-face` selector. Copy the following code in your `index.css` file. 
+You can create a font family by using the CSS `@font-face` selector. Copy the following code in your `index.css` file. 
 
 The `@font-face` selector has the following properties: 
 * `font-family` through which you set the name of the family, and 
@@ -119,7 +121,7 @@ Use the following code to create two font families named: 'Sora' and 'SoraBold'.
 
 After you created the new font families using `@font-face`, you can use those font families in your `index.css` file to set the font for your website.
 
-In order to set the font for your whole website, you can use the CSS `body` selector. All of the important HTML elements that display your content are inside the `body` tag.
+In order to set the font for your whole website, you can use the CSS `body` selector. This means that all of the HTML elements that 'live' inside your `body` tag will have this font.
 
 Copy the following code in your `index.css` file.
 
@@ -131,7 +133,7 @@ body {
 
 ### 📝 Task - Font
 
-OK, let's try some of the things you have learned so far. 
+Let's set a background color for your website. 
 
 To set a background color for your whole website, you can use the `background-color` property. 
 
@@ -142,14 +144,14 @@ Copy the following code in the `body` element selector in `index.css`.
 ```CSS
 body {
     font-family: Sora;
-    background-color: FFF2F8;
+    background-color: #FFF2F8;
     margin: 0;
 }
 ```
 
 ### 📝 Task - Font size
 
-Now, that we have our background color, let's set the size of the h1 headings. You can do that by setting the `font-size` property.
+Now, that we have our background color, let's set the size of the `h1` headings. You can do that by setting the `font-size` property.
 
 Copy the following code in the `index.css` file.
 
@@ -158,23 +160,17 @@ h1 {
     font-size: 4vw;
 }
 ```
+
 ### Background and background images 
 
 ### 📝 Task - Banner image
-Let's  style our banner next. You can set a background image for your banner by setting the `background-image` property.
+Let's  style our banner next. 
+
+You can set a background image for your banner by setting the `background-image` property.
 
 In Visual Studio Code, create a new folder named `assets` and copy there an image that you want to use as a background image for your banner.
 
-Once you have than, you can copy the following code in the `index.css` file to set the background image. 
-
-The `background-image` property accepts a `url` value, which is the path to your image. In this case, you have your image inside the `assets` folder, therefore you can use: `url(./assets/baner.png);` where `banner.png` is the name of your image.
-
-Copy the following code in your `index.css` file.
-
-✅ What would happen if you set different `background-position` or `background-size` inside the `#banner` CSS selector?
-You can read more on that [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
-
-✅ What would happen if you change the `background-image` property to `url(./assets/baner-2.png)`?
+Once you have the image, you can copy the following code in the `index.css` file to set the background image. 
 
 ```CSS
 #banner {
@@ -184,6 +180,13 @@ You can read more on that [here](https://developer.mozilla.org/en-US/docs/Web/CS
     font-family: SoraBold;
 }
 ```
+
+The `background-image` property accepts a `url` value, which is the path to your image. In this case, you have your image inside the `assets` folder, therefore you can use: `url(./assets/baner.png);` where `banner.png` is the name of your image.
+
+✅ What would happen if you set different `background-position` or `background-size` inside the `#banner` CSS selector?
+You can read more on that [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
+
+✅ What would happen if you change the `background-image` property to `url(./assets/baner-2.png)`?
 
 ### 📝 Task - Image size
 
@@ -229,6 +232,7 @@ We can position different HTML elements to be displayed however we want. For exa
 Let's position them side by side, so that they do not take that much space. 
 
 To position your elements, you will use `flex`.
+
 >You can read more on flex [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 
 ### 📝 Task - Position
@@ -302,11 +306,13 @@ Copy the following CSS code in your `index.css` file.
 
 ### Padding
 
-Padding allows you to create, well... padding inside a certain HTML element.
+Padding allows you to create, well... padding, inside a certain HTML element.
 
 ###  📝 Task - Padding
 
-Let's look at the `<div>` element for the banner again. Copy the following code `padding: 0 200;` inside the `#banner-center` selector inside `index.css`.
+Let's look at the `<div>` element for the banner again. 
+
+Copy the following code `padding: 0 200;` inside the `#banner-center` selector inside `index.css`.
 
 What do you see?
 
@@ -331,7 +337,7 @@ Copy the following code inside your `index.css` file.
 
 ### Borders
 
-You can create borders aroung different HTML elements using the CSS property `border`. You can also specifically set the top, right, left or bottom border. 
+You can create borders around different HTML elements using the CSS property `border`. You can also specifically set the top, right, left or bottom border. 
 
 ###  📝 Task - Borders
 
@@ -343,7 +349,7 @@ Copy the following HTML tags where you want to puth a seperation line in your `i
  <div class="center-horizontal-line"></div>
 ```
 
-Then style the `<div>` element like so. So, we say that we are going to create a new `<div>` element that will seperate the other elements and we will use the property `border-bottom` to create a solid border with size: 1rem and color: `#e3426d`.
+Then style the `<div>` element like so. So, we say that we are going to create a new `<div>` element that will seperate the other elements and we will use the property `border-bottom` to create a solid border with `size: 1rem` and `color: #e3426d`.
 
 Copy the following CSS code in your `index.css` file.
 
@@ -387,7 +393,9 @@ Wrap the words 'high school student' inside a `span` tag and define a `class` at
 </div>
 ```
 
-Finally, define the CSS code for the class `text-emphasize` selector. Copy the following code in your `index.css` file.
+Finally, define the CSS code for the class `text-emphasize` selector. 
+
+Copy the following code in your `index.css` file.
 
 ```CSS
 .text-emphasize {
@@ -437,7 +445,7 @@ and second project html:
 
 ###  📝 ✨✨✨ Advanced Task ✨✨✨ 
 
-Another way to highlight your text is by creating a gradient. A gradient is actually a transation between two or more colors along a straight line.  
+Another way to highlight your text is by creating a gradient. A gradient is actually a transition between two or more colors along a straight line.  
 
 Wrap the word inside a `<span>` tag and set a class selector `text-highlight` on the `<span>` tag.
 
@@ -445,7 +453,7 @@ Wrap the word inside a `<span>` tag and set a class selector `text-highlight` on
 <h1>Hello world, I am <span class="text-highlight">[type your name here]</span></h1>
 ```
 
-With this CSS code you will create a gradient going from top to bottom with `f7cad0` and turning `#e3426d` at 30%. 
+With this CSS code you will create a gradient going from top to bottom with color `#f7cad0` and turning to color `#e3426d` at 30%. 
 
 Copy the following CSS code in your `index.css`.
 
@@ -462,7 +470,7 @@ You can try creating different gradients using the following [link](https://deve
 
 Let's try something even cooler. You are going to animate the `<span>` elements you were styling previously. 
 
-The following CSS code tells the `<span>` elements with `class="text-tag"` to change the color from `#f7cad0` to `#e3426d` in 3 seconds. Also, to change the position from a certain position to another. The position is specified with the `top` property.
+The following CSS code tells the `<span>` elements with `class="text-tag"` to change the color from `#f7cad0` to `#e3426d` in 3 seconds. Also, to change the position from `top: -20;` to `top: 0;`.
 
 Copy the following code to your `index.css` file inside the existing style for the `text-tag` selector.
 
@@ -485,10 +493,6 @@ Copy the following code to your `index.css` file inside the existing style for t
 
 You can define the animation `change-tag-background` with the following CSS code. 
 
-We use the `from` property to define the background color and position of the text tag before the animation starts. We use the `to` property to define the background colod and position of the text tag after the animation is finished.
-
-The animation will last for 3 seconds as defined with the property `animation-duration`.
-
 ```CSS
 /* ANIMATIONS */
 @keyframes change-tag-background {
@@ -502,6 +506,12 @@ The animation will last for 3 seconds as defined with the property `animation-du
     }
 }
 ```
+We use the `from` property to define the background color and position of the text tag *before* the animation starts. We use the `to` property to define the background color and position of the text tag *after* the animation is finished.
+
+The animation will last for 3 seconds as defined with the property `animation-duration`.
+
+✅ What will happen if you change `top` from `top: -20` to `top: -50`?
+
 
 That's it for this second lesson! Bravo! 👏 👏 👏
 

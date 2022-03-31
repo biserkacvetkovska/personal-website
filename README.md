@@ -5,7 +5,7 @@ On this coding bootcamp you will learn the basics of web programming and technol
 # Tools and guidelines 👇
 
 * [Install Visual Studio Code](./tools/installation-guidelines-vs-code.md)
-* [Install Discord](./tools/installation-guidelines-discord.md)
+* [Install Discord / Join the Leet Ladies community](./tools/installation-guidelines-discord.md)
 
 # Lessons 👇
 
