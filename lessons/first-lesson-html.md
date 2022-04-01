@@ -7,17 +7,21 @@ If you do not have Visual Studio Code installed on your computer, please use a t
 
 ## Introduction
 
-HTML, or HyperText Markup Language is the body or the so called 'skeleton' of your website. You will later see that the HTML's syntax even reflects that idea, as it is always consisted of the following tags: "head", "body", and "footer".
+HTML, or HyperText Markup Language is the body or the so called "skeleton" of your website. You will later see that the HTML's syntax even reflects that idea, as it is always consisted of the following tags: "head", "body", and "footer".
 
-In this lesson, we're going to use HTML to create the 'skeleton' of your personal website. 
+In this lesson, we're going to use HTML to create the "skeleton" of your personal website. 
 Your personal website will be consisted of:
 - A banner
 - A single row that will give a short presentation of yourself
-- Two columns that will showcase the projects you have worked on
+- An additional row that will showcase the projects you have worked on
 - An additional row that will contain your education
-- Two additinal columnts that will contain your skills
+- Two additinal columnts that will contain your interests
 
-By the end of this lesson, you will be able to see the rows and columns, but the website will look a little strange; don't worry, in the next lesson you will add CSS styles to the website to make it look better.
+To better visualize the website you will build, take a look at the following GIF.👇 
+![This is the website you will build](../photos/personal-website-gif.gif)
+
+
+🌟 By the end of this lesson, you will be able to see the rows and columns, but the website will look a little strange; don't worry, in the next lesson you will add CSS styles to the website to make it look better.
 
 ### 📝 Task
 
@@ -29,7 +33,7 @@ Open Visual Studio Code and from the File menu choose 'Open Folder...'. In the d
 
 ### The `html` tag
 
-The first line in the HTML 'skeleton' is the `<html>` opening tag, followed by its closing tag `</html>`. These tags are the root elements of your website. It is important to note that HTML tags are always used in pairs: an opening tag `<>` and a closing tag `</>`.
+The first line in the HTML "skeleton" is the `<html>` opening tag, followed by its closing tag `</html>`. These tags are the root elements of your website. It is important to note that HTML tags are always used in pairs: an opening tag `<>` and a closing tag `</>`.
 
 For example: `<p>Hello</p>` to indicate a paragraph.
 
@@ -85,7 +89,7 @@ Create your websites's body by adding a set of `<body>` tags inside the `<html>`
 </html>
 ```
 
-Now, you can start building the elements that will represent your banner, short introduction, projects, skills, etc. Normally, you use `<div>` tags to create the separate elements. We'll create a series of `<div>` elements inside the `<body>` tag. 
+Now, you can start building the elements that will represent your banner, short introduction, projects, interests, etc. Normally, you use `<div>` tags to create the separate elements. We'll create a series of `<div>` elements inside the `<body>` tag. 
 
 `<div>` elements are so called block elements which means that is always starts on a new line, and the browsers automatically add some space (a margin) before and after that element.
 
@@ -252,7 +256,7 @@ Copy the following HTML in you `index.html` file.
 </ul>
 ```
 
-Let's add two lists for your skills inside the `<div id="content">` tag after the last closing `</div>` tag.
+Let's add two lists for your interests inside the `<div id="content">` tag after the last closing `</div>` tag.
 
 ```html
 <div>
