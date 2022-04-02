@@ -15,7 +15,7 @@ Your personal website will be consisted of:
 - A single row that will give a short presentation of yourself
 - A "Projects" section that will showcase the projects you have worked on
 - An "Education" section that will contain your education
-- Two additinal columnts that will contain your interests
+- Two additinal columns that will contain your interests
 - Footer that will contain links to your social accounts (Instagram, TikTok, Twitter, ...)
 
 
