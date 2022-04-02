@@ -443,6 +443,43 @@ and second project html:
 <span class="text-tag">adobe illustrator</span>
 ```
 
+###  📝 Task
+
+Let's style the footer next. To style the footer, you are going to use an `element` selector. 
+
+The footer contains three links, so you are going to position them in the center of the footer, side by side. Therefore, you can use `display: flex` and `justify-content: center;` to do so. 
+
+You can also change the background color of the footer using the `background-color` property. 
+
+Lastly, you can set a margin using the `margin` property, so that you seperate the footer from the previous HTML tags. 
+In order to specify the `margin` properly, you will have to set the margin for *all four sides*: top, right, bottom, left. Set `margin: 20` for the top and then `margin: 0` for the right, bottom and left side.
+
+Copy the following CSS code in your `index.css` file. 
+
+```CSS
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #e3426d;
+    margin: 20 0 0 0;
+}
+```
+
+✅ What will happen if you set the `background-color` to a different color, for example `grey`?
+
+Currently, the color of the links is blue, you can change that by setting the `color` property. In addition, you can also set padding between the links, so they are not that close together. 
+
+Copy the following CSS in your `index.css` file. 
+
+```CSS
+footer a {
+    color: white;
+    padding: 20;
+}
+```
+
+The `footer a` selector is a *nested selector*. This means that the CSS inside the brackets will be applied to all `<a>` elements inside the `<footer>` element.
+
 ###  📝 ✨✨✨ Advanced Task ✨✨✨ 
 
 Another way to highlight your text is by creating a gradient. A gradient is actually a transition between two or more colors along a straight line.  

@@ -79,6 +79,18 @@ h1 {
     top: 0;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #e3426d;
+    margin: 20 0 0 0;
+}
+
+footer a {
+    color: white;
+    padding: 20;
+}
+
 /* ADVANCED ANIMATIONS */
 @keyframes change-tag-background {
     from {
