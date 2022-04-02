@@ -13,9 +13,11 @@ In this lesson, we're going to use HTML to create the "skeleton" of your persona
 Your personal website will be consisted of:
 - A banner
 - A single row that will give a short presentation of yourself
-- An additional row that will showcase the projects you have worked on
-- An additional row that will contain your education
+- A "Projects" section that will showcase the projects you have worked on
+- An "Education" section that will contain your education
 - Two additinal columnts that will contain your interests
+- Footer that will contain links to your social accounts (Instagram, TikTok, Twitter, ...)
+
 
 To better visualize the website you will build, take a look at the following GIF.👇 
 ![This is the website you will build](../photos/personal-website-gif.gif)
@@ -213,6 +215,8 @@ In the html code below, you will also use the `<span>` tag. The `<span>` tag is 
     </div>
 ```
 
+### 📝 Task
+
 Let's display your education next. 
 
 Copy the following tags inside the `<div id="content">` tag after the last closing `</div>` tag.
@@ -236,6 +240,8 @@ Copy the following tags inside the `<div id="content">` tag after the last closi
         </div>
     </div>
 ```
+
+### 📝 Task
 
 Lastly, to showcase your interests, we will use a list. 
 
@@ -278,6 +284,46 @@ Let's add two lists for your interests inside the `<div id="content">` tag after
         </ul>
     </div>
 </div>
+```
+
+### 📝 Task 
+
+If you remember, at the beginning of this first lesson, we said that the HTML "skeleton" is consisted of: 
+* head
+* body
+* footer
+
+So far, you created the head and the body. Let's create the footer now. To create the footer, you will use the `<footer>` tag. 
+
+Copy the following HTML tags in your `index.html` right before the closing `</body>` tag.
+
+```HTML
+<footer>
+</footer>
+```
+
+### 📝 Task
+
+In the footer you will display links to your favourite social network accounts (Instagram, TikTok, Twitter, ...).
+
+To create a link on your website, you will use the `<a>` tag. The `<a>` tag needs an `href` attribute which specifies the destination of your link. 
+
+For example, if you want to create a link that goes to Twitter, you will do something like this:
+
+```HTML
+<a href="https://twitter.com/">Go to Twitter</a>
+```
+
+The text "Go to Twitter" can be changed to whatever you want to display on your website. 
+
+To create three links on your website inside the footer, copy the following HTML tags inside the `<footer>` tag in your `index.html`.
+
+```HTML
+<footer>
+    <a href="https://twitter.com/">Twitter</a>
+    <a href="https://instagram.com/">Instagram</a>
+    <a href="https://tiktok.com/">TikTok</a>
+</footer>
 ```
 
 That's it for this first lesson! Bravo! 👏 👏 👏
