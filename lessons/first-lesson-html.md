@@ -293,7 +293,7 @@ If you remember, at the beginning of this first lesson, we said that the HTML "s
 * body
 * footer
 
-So far, you created the head and the body. Let's create the footer now. To create the footer, you will use the `<footer>` tag. 
+So far, you have created the head and the body. Let's create the footer now. To create the footer, you will use the `<footer>` tag. 
 
 Copy the following HTML tags in your `index.html` right before the closing `</body>` tag.
 
