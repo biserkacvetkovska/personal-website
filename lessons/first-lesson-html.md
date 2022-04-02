@@ -19,7 +19,7 @@ Your personal website will be consisted of:
 - Footer that will contain links to your social accounts (Instagram, TikTok, Twitter, ...)
 
 
-To better visualize the website you will build, take a look at the following GIF.👇 
+To better visualize the website that you will be building, take a look at the following GIF.👇 
 ![This is the website you will build](../photos/personal-website-gif.gif)
 
 
