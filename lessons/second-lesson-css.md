@@ -5,7 +5,7 @@
 For this lesson, we will be using Visual Studio Code to create a personal website.
 If you do not have Visual Studio Code installed on your computer, please use a text editor like Notepad++ or similar.
 
-❗❗❗ You have to complete the first lesson: **First lesson (HTML)**, before you start with this second lesson.
+❗❗❗ You have to complete the first lesson **First lesson (HTML)**, before you start with this second lesson.
 
 ## Introduction
 
