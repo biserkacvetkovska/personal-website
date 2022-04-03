@@ -168,7 +168,7 @@ Let's  style our banner next.
 
 You can set a background image for your banner by setting the `background-image` property.
 
-In Visual Studio Code, create a new folder named `assets` and copy there an image that you want to use as a background image for your banner.
+In Visual Studio Code, create a new folder named `assets` and copy there an image that you want to use as a background image for your banner. You can use your own image for the banner or choose one of the banner images available [here](./assets/).
 
 Once you have the image, you can copy the following code in the `index.css` file to set the background image. 
 
@@ -186,7 +186,7 @@ The `background-image` property accepts a `url` value, which is the path to your
 ✅ What would happen if you set different `background-position` or `background-size` inside the `#banner` CSS selector?
 You can read more on that [here](https://developer.mozilla.org/en-US/docs/Web/CSS/background).
 
-✅ What would happen if you change the `background-image` property to `url(./assets/baner-2.png)`?
+✅ What would happen if you change the `background-image` property to `url(./assets/baner-2.png)`? 
 
 ### 📝 Task - Image size
 
@@ -550,11 +550,13 @@ The animation will last for 3 seconds as defined with the property `animation-du
 ✅ What will happen if you change `top` from `top: -20` to `top: -50`?
 
 
-That's it for this second lesson! Bravo! 👏 👏 👏
+That's it for this second lesson! 
 
-Now you have the content and styles for your personal website. 🎉 🎉 🎉
+You did it - you have the content and styles for your personal website. 🎉 🎉 🎉
 
-In the next lesson we will learn JavaScript.
+The result of this second lesson is an HTML file that can be found [here](./second-lesson-css-index.html) and a CSS file that can be found [here](./second-lesson-css.css).
+
+In the next lesson you will learn JavaScript.
 
 
 

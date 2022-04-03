@@ -75,7 +75,7 @@ Read more about the [viewport](https://developer.mozilla.org/docs/Web/HTML/Viewp
 
 ### The `body` tag
 
-Create your websites's body by adding a set of `<body>` tags inside the `<html>` tag pair; your markup now looks like this:
+Create your website's body by adding a set of `<body>` tags inside the `<html>` tag pair; your markup now looks like this:
 
 ### 📝 Task
 
@@ -91,17 +91,21 @@ Create your websites's body by adding a set of `<body>` tags inside the `<html>`
 </html>
 ```
 
-Now, you can start building the elements that will represent your banner, short introduction, projects, interests, etc. Normally, you use `<div>` tags to create the separate elements. We'll create a series of `<div>` elements inside the `<body>` tag. 
+Now, you can start building the elements that will represent your banner, short introduction, projects, interests and footer.
 
-`<div>` elements are so called block elements which means that is always starts on a new line, and the browsers automatically add some space (a margin) before and after that element.
+Normally, you use `<div>` tags to create the separate elements. You will create a series of `<div>` elements inside the `<body>` tag. 
 
-Inside each `<div>` element, you can create other HTML elements. The `<div>` element acts as a container or a holder for the other elements. 
+`<div>` elements are so called block elements. Block elements always start in a new line, and the browsers automatically add some space (a margin) before and after that element.
+
+Inside each `<div>` element, you can create other HTML elements. The `<div>` element acts as a container or a holder for the other HTML elements. 
 
 ### 📝 Task
 
-The website you are building will be consisted of two main elements: one is the banner the second is the content. Let's create the `<div>` elements representing the banner and the content.
+The website you are building will be consisted of two main elements: 
+1. The banner 
+2. The content. 
 
-Add the following tags inside the `<body>` tag.
+Let's create the `<div>` elements representing the banner and the content. Add the following tags inside the `<body>` tag in your `index.html`.
 
 ```html
     <div id="banner"></div>
@@ -130,15 +134,17 @@ Insert the following tags inside the `<div id="banner">` tag.
     </div>
 ```
 
-Both `id` and `class` attributes allow us to apply different styles or behaviours on the html element that contain those attributes. These especially come in handy when using CSS to style the website or using JavaScript to make the website 'alive'. 
+Both `id` and `class` attributes allow us to apply different styles or behaviours on the html element that contain those attributes. These especially come in handy when using CSS to style the website or using JavaScript to make the website 'alive'. You will concentrate on these attributes in the second lesson. 
 
 ### Images
 
 Adding images is done through the `<img>` tag. The `<img>` tag accepts the `src` parameter, which defines the path of the image that we want to display. 
 
+Let's add your avatar inside the banner. You can use your own image or choose some of the images available [here](./assets/).
+
 ### 📝 Task
 
-Insert the following tags inside the `<div id="banner">` tag.
+The `<div>` element representing your banner in the `index.html` should look like this. 
 
 ```html
     <div id="banner">
@@ -149,6 +155,8 @@ Insert the following tags inside the `<div id="banner">` tag.
     </div>
 ```
 
+### Content
+
 Now that we have the banner, let's create the content.
 
 Let's create the first row which will contain a short description about yourself.
@@ -157,9 +165,7 @@ Let's create the first row which will contain a short description about yourself
 
 Insert the following tags inside the `<div id="content">` tag. 
 
-The `<p>` tag is used to define a paragraph and is also a block element, meaning that will always start in a new line. You can change the text inside the paragraph to something you like.
-
-You can also see that we use here another heading tag `<h2>` and the of the text is significantly smaller than the main text wrapped inside the `<h1>` tag.
+The `<p>` tag is used to define a paragraph and is also a block element, meaning that will always start in a new line.
 
 ```html
     <div id="content">
@@ -169,13 +175,15 @@ You can also see that we use here another heading tag `<h2>` and the of the text
 
 ✅ What would happen if you set change the text in the paragraph tag? This is an example text, you can replace this text with whatever text you want. 
 
-After the single row that will showcase a short description about yourself, we will create two different elements that will represent two different projects on which you have worked.
+After the single row that will showcase a short description about yourself, we will create a section that will represent two different projects you have worked on.
 
 ### 📝 Task
 
-Insert the following tags inside the `<div id="content">` tag after the first `div` element.
+To do so, insert the following tags inside the `<div id="content">` tag after the first `div` element.
 
-In the html code below, you will also use the `<span>` tag. The `<span>` tag is an inline element that can be used as part of a `<p>` element to mark up a part of a text and can be easily styled with CSS.
+In the HTML code below, you can see that a heading tag `<h2>` is used. This means that the text is significantly smaller than the main text wrapped inside the `<h1>` tag.
+
+In addition, you will also use the `<span>` tag. The `<span>` tag is an inline element that can be used as part of a `<p>` element to mark up a part of a text and can be easily styled with CSS.
 
 ```html
     <div id="content">
@@ -246,13 +254,14 @@ Copy the following tags inside the `<div id="content">` tag after the last closi
 Lastly, to showcase your interests, we will use a list. 
 
 The html tag for list is `<ul>`. Inside every list we have list items which are represented with the `<li>` tag.
+
 For example, if you want to create the following list in HTML:
 
 * List item 1
 * List item 2
 * List item 3
 
-Copy the following HTML in you `index.html` file.
+you willl need to copy the following HTML in you `index.html` file.
 
 ```html
 <ul>
@@ -326,8 +335,10 @@ To create three links on your website inside the footer, copy the following HTML
 </footer>
 ```
 
-That's it for this first lesson! Bravo! 👏 👏 👏
+That's it for this first lesson! 
 
-Now you have the content and most of the elements required to build your personal website. 🎉 🎉 🎉 
+You did it - now you have the content and most of the elements required to build your personal website. 🎉 🎉 🎉 
 
-In the next lesson we will change the font, apply coloring 🎨, position and 💫 style 💫 everything properly.
+The result of this first lesson is an HTML file that can be found [here](./first-lesson-html-index.html).
+
+In the next lesson you will change the font, apply coloring 🎨 and position and 💫 style 💫 everything properly.
