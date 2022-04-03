@@ -339,6 +339,6 @@ That's it for this first lesson!
 
 You did it - now you have the content and most of the elements required to build your personal website. 🎉 🎉 🎉 
 
-The result of this first lesson is an HTML file that can be found [here](./first-lesson-html-index.html).
+The result of this first lesson is an HTML file that can be found [here](./first-lesson.html).
 
 In the next lesson you will change the font, apply coloring 🎨 and position and 💫 style 💫 everything properly.
