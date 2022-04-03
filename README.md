@@ -9,8 +9,9 @@ On this coding bootcamp you will learn the basics of web programming and technol
 
 # Lessons 👇
 
-* [Lesson 1 - Intro to HTML](./lessons/first-lesson-html.md)
-* [Lesson 2 - Intro to CSS](./lessons/second-lesson-css.md)
+* [Lesson 1 - HTML](./lessons/first-lesson-html.md)
+* [Lesson 2 - CSS](./lessons/second-lesson-css.md)
+* [Lesson 3 - JavaScript](./lessons/third-lesson-js.md)
 
 
 ![alt text](./photos/leetladies-flyer.png "Leet Ladies - Coding bootcamp")
