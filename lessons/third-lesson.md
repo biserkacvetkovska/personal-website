@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-For this lesson, we will be using Visual Studio Code to create a personal website.
+For this lesson, you will be using Visual Studio Code to create a personal website.
 If you do not have Visual Studio Code installed on your computer, please use a text editor like Notepad++ or similar.
 
 ❗❗❗ You have to complete the first [**First lesson (HTML)**](./first-lesson.md) and second lesson [**Second lesson (CSS)**](./second-lesson.md), before you start with this third lesson.
@@ -172,9 +172,125 @@ else {
 }
 ```
 
-In your browser, right click any element in your website and choose "Inspect element". Watch how the class attribute changes when you click the "Switch theme" button.
+In your browser, right click any element in your website and choose "Inspect...". Watch how the class attribute changes when you click the "Switch theme" button.
 
 ![Switch theme](./assets/switcher.gif)
+
+## Functions
+
+A function represents a block of code that you can execute on demand. Let's say that you want to count the number of times you click on the "Switch theme" button.
+
+This is perfect for scenarios where you need to perform the same task multiple times; rather than duplicating the logic in multiple locations (which would make it hard to update when the time comes), you can centralize it in one location, and call it whenever you need the operation performed.
+
+### Create a function 
+
+To create a function in your `index.js`, you can use the following code where `nameOfFunction` can be anything you want.
+
+```JS
+function nameOfFunction() { // function definition
+ // function definition/body
+}
+```
+
+### 📝 Task
+
+For example, if you wanted to create a function to display a greeting, you can copy the following code in your `index.js`.
+
+```JS
+function displayGreeting() {
+  console.log('Hello, world!');
+}
+```
+
+If you refresh your website, you will see that nothing happens. This is because you have only defined the function but you haven't invoke it yet. Whenever you want to call (or invoke) our function, you use the name of the function followed by ().
+
+```JS
+// calling your function
+displayGreeting();
+```
+
+Refresh your website and right click anywhere. From the menu choose "Inspect...", then open the `Console` tab. You can now see that the `displayGreeting` function was invoked and the text `Hello world!` is displayed in the console.
+
+### 📝 Task
+
+Let's create another function that will be invoked whenever you click on the "Switch theme" button. 
+
+In your `index.js` file copy the following code.
+
+```JS
+function countClicks() {
+    console.log("You clicked the button!");
+}
+```
+
+Then invoke the function inside the `eventHandler` which is invoked whenever you click the button. Your `eventHandler` should look like this now.
+
+```JS
+switchThemeButton.addEventListener('click', function () {
+    countClicks(); // invoke the function countClicks()
+
+    let className = document.body.className;
+
+    if (className == 'theme-dark') {
+        ...
+    }
+    else {
+        ...
+    }
+});
+```
+
+In your browser, right click any element in your website and choose "Inspect...". Watch how the console logs every click on the button.
+
+![Switch theme count clicks](./assets/count-clicks.gif)
+
+### 📝 Task
+
+Next, you will display the number of times the theme was changed on your website too not just in the console. 
+
+In your `index.html` create two HTML elements after the "Interests" section.
+
+```HTML
+<p>The theme was switched <span id="count-clicks">0</span> times.</p>
+```
+
+In your `index.js` file create a new variable which value will be equal to the number of times the theme was switched. 
+
+At the beginning, this number will be 0, so you can initialize the variable to be equal to 0.
+
+```JS
+let countSwitches = 0;
+```
+
+Every time, you click on the button to switch the theme, you want to increse the value of the `countSwitches` variable by 1. So, let's implement that logic in JavaScript.
+
+Inside your `countClicks` function increase the value of your variable for 1 and then assign the new value to the variable.
+
+```JS
+function countClicks() {
+    countSwitches = countSwitches + 1;
+
+    console.log("You clicked the button!");
+}
+```
+
+Another way of writing `countSwitches + 1` is `countSwitches++` or you can even do this: `countSwitches += 1`. All of these do the same thing - the value of the `countSwitches` variable will increase by 1.
+
+Next, let's try to display the value of the `countSwitches` variable on the screen. In your `countClicks` function do the following.
+
+```JS
+function countClicks() {
+    countSwitches = countSwitches + 1;
+
+    document.getElementById("count-clicks").value = countSwitches;
+
+    console.log("You clicked the button!");
+}
+```
+
+Watch how the number of theme switches changes on the screen every time you click the "Switch theme" button.
+
+![Switch theme count on display](./assets/count-clicks-display.gif)
 
 That's it for this third lesson!
 
