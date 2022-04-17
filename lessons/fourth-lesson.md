@@ -18,7 +18,7 @@ What's true for every library is also true for GitHub. For example, each book th
 
 In GitHub you use the following commands: `pull` and `push` instead of `lend` and `return`.
 
-## GitHub
+## ✨✨✨ GitHub
 
 If you are curious about why tools such as GitHub exist, here are two reasons:
 1. *To not lose your work* - Imagine if something happens with your computer while you work on your website. With GitHub, you can keep your code safe in the GitHub library and not be afraid of losing work.  
@@ -139,6 +139,8 @@ That's it! You did your first push and now all of your code is added on GitHub. 
 3. `git push`
 
 ![Commit and push to GitHub](./assets/Github-Flow.png)
+
+## ✨✨✨ Netlify
 
 That's it for this fourth lesson!
 
