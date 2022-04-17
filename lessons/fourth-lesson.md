@@ -142,6 +142,8 @@ That's it! You did your first push and now all of your code is added on GitHub. 
 
 ## ✨✨✨ Netlify
 
+We are going to use [these guidelines](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) to deploy our website on Netlify.
+
 That's it for this fourth lesson!
 
 You did it, you finished all lessons! Bravo!
