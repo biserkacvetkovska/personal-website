@@ -114,19 +114,23 @@ Then type:
 
 This command will create a remote, or a connection, named "origin" pointing at the GitHub repository you created earlier.
 
+### 📝 Task - Push your changes to GitHub
+
 So far you've created a connection between your local folder and the GitHub repository. Let's send your local files to GitHub. For that, you can use the `git push` command:
 
 ``` git push -u origin master ```
 
 That's it! You did your first push and now all of your code is added on GitHub.
 
+### 📝 Task
+
 In the future, if you have changes in your website files, you can always use the following three commands to push your changes to GitHub:
 
-`git add .`
+1. `git add .`
 
-`git commit -m "type your commit message here"`
+2. `git commit -m "type your commit message here"`
 
-`git push`
+3. `git push`
 
 That's it for this fourth lesson!
 
