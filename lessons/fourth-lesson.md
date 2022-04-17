@@ -11,11 +11,16 @@ If you do not have Visual Studio Code installed on your computer, please use a t
 
 In the first part of this lesson you will focus on GitHub. You can think of GitHub as a public library that instead of books contains various coding projects such as your personal website. 
 
-What's true for every library is also true for GitHub. For example, each book that is part of the library can be lend and accessed by many people that are interested in the topics the book covers. Once you are finished reading the book, you then return it back to the library.
+What's true for every library is also true for GitHub. For example, each book that is part of the library can be lend and accessed by many people that are interested in the topics the book covers. Once you are finished reading the book, you then return it back to the library. 
+> Disclaimer:  Although, you are not allowed to change the books that you lend from the library, you can think of GitHub as a library that allows such changes. Everytime you return the book with your changes, everyone can lend the book and see those changes too.
+
+![GutHub vs. Public library](./assets/Github-Library.png)
+
+In GitHub you use the following commands: `pull` and `push` instead of `lend` and `return`, .
 
 ## GitHub
 
-You use tools such as GitHub for mainly two reasons:
+If you are curious about why tools such as GitHub exist, here are two reasons:
 1. *To not lose your work* - Imagine if something happens with your computer while you work on your website. With GitHub, you can keep your code safe in the GitHub library and not be afraid of losing work.  
 2. *More people can work on the same code at the same time* - Right now, you are the only one that has access to your code. Imagine if you build your website in a team, together with a friend. In order for your friend to collaborate with you on the website, they have to have access to your website's code too.
 
@@ -26,7 +31,8 @@ In this lesson, you will create a GitHub account and you will upload your code t
 Sign up and create a profile with GitHub.
 
 1. Navigate to [GitHub](https://github.com/signup).
-2. Enter your email and then follow the guidelines. In addition, you will have to enter:
+2. Enter your email and then follow the guidelines. 
+In addition, you will have to enter:
 * a password
 * a username
 * the letter "n". 
@@ -34,7 +40,7 @@ Sign up and create a profile with GitHub.
 ![GitHub guidelines](./assets/github-guidelines.png)
 
 3. Next, you will need to solve a puzzle, so that GitHub knows that you are not a program.
-4. Sign in GitHub with your username and password!
+4. Sign in to GitHub with your username and password.
 
 ### 📝 Task - Install Git
 
@@ -48,14 +54,16 @@ On your computer you have an application called "Command prompt" (Windows) or "T
 
 Open the "Command prompt" or the "Terminal" and type the following lines:
 
-* ``` git config --global user.name "your-github-username" ```
-* ``` git config --global user.email "your-github-email" ```
+* ``` git config --global user.name "replace-with-your-github-username" ```
+* ``` git config --global user.email "replace-with-your-github-email" ```
 
 By executing these two lines in your "Command Prompt" or "Terminal" , you have connected Git with your GitHub profile. 
 
 ### 📝 Task - Create a repository on GitHub
 
-Go to [GitHub](https://github.com) and create a repository by clicking the green "New" button. 
+Go to [GitHub](https://github.com) and sign in with your username and password. Under "Repositories", create a new repository by clicking the green "New" button. 
+
+On the next screen:
 
 1. Set the name of your repositoty to "personal-website"
 2. Choose "Private"
@@ -84,7 +92,7 @@ After running the `git add` command, you can also check the status of your files
 
 ``` git status ```
 
-This command will show you, which files has been added, modified and deleted. 
+This command will show you, which files has been added, modified or deleted. 
 
 ### 📝 Task - Commit files
 
@@ -92,9 +100,9 @@ At this point you've added the files to a so called staging area. A place where 
 
 ``` git commit -m "first commit" ```
 
-The message "first commit" is called a commit message. You set the commit message. The commit message needs to be more descriptive and needs to give an information about what was changed or added in the commit. This helps you create a more readable and easy to track history of your repository. 
+The message "first commit" is called a commit message. You are the one that sets the commit message. The commit message needs to be more descriptive and needs to give an information about what was changed or added in the commit. This helps you create a more readable and easy to track history of your repository. 
 
-For example, if you open your repository on GitHub, you will see that it shows the number of commits made to that repository. If you click on the commits, you will see your history and how your code changed over time.
+For example, if you open a repository on GitHub, you will see that you can information about the number of commits made to that repository. If you click on  "... commits", you will see your history and how your code changed over time.
 
 ![Repository history](./assets/repository-commits.png)
 
@@ -102,7 +110,7 @@ For example, if you open your repository on GitHub, you will see that it shows t
 
 A Git repository is good on your computer, but at some point you want to have backup of your files somewhere and also invite other people to work with you on your repository.
 
-Remember you've already created a repository on GitHub so the only thing you need to do is to connect our local Git repository with GitHub. The command `git remote add` will do just that.
+Remember you've already created a repository on GitHub, so the only thing you need to do is to connect your local Git repository with GitHub. The command `git remote add` will do just that.
 
 Before you type this command in your "Command prompt" or "Terminal", navigate to your newly created GitHub repository and find the URL of your repository.
 
@@ -120,7 +128,7 @@ So far you've created a connection between your local folder and the GitHub repo
 
 ``` git push -u origin master ```
 
-That's it! You did your first push and now all of your code is added on GitHub.
+💫 💫 💫 That's it! You did your first push and now all of your code is added on GitHub. 💫 💫 💫 
 
 ### 📝 Task
 
@@ -131,6 +139,8 @@ In the future, if you have changes in your website files, you can always use the
 2. `git commit -m "type your commit message here"`
 
 3. `git push`
+
+![Commit and push to GitHub](./assets/Github-Flow.png)
 
 That's it for this fourth lesson!
 
