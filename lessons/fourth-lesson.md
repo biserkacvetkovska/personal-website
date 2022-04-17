@@ -16,7 +16,7 @@ What's true for every library is also true for GitHub. For example, each book th
 
 ![GutHub vs. Public library](./assets/Github-Library.png)
 
-In GitHub you use the following commands: `pull` and `push` instead of `lend` and `return`, .
+In GitHub you use the following commands: `pull` and `push` instead of `lend` and `return`.
 
 ## GitHub
 
@@ -128,11 +128,9 @@ So far you've created a connection between your local folder and the GitHub repo
 
 ``` git push -u origin master ```
 
-💫 💫 💫 That's it! You did your first push and now all of your code is added on GitHub. 💫 💫 💫 
+That's it! You did your first push and now all of your code is added on GitHub. 💫 💫 💫 
 
-### 📝 Task
-
-In the future, if you have changes in your website files, you can always use the following three commands to push your changes to GitHub:
+✅ In the future, if you have changes in your website files, you can always use the following three commands to push your changes to GitHub:
 
 1. `git add .`
 
