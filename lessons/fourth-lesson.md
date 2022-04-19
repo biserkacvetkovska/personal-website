@@ -142,11 +142,50 @@ That's it! You did your first push and now all of your code is added on GitHub. 
 
 ## ✨✨✨ Netlify
 
-We are going to use [these guidelines](https://www.netlify.com/blog/2016/09/29/a-step-by-step-guide-deploying-on-netlify/) to deploy our website on Netlify.
+Whenever you visit a website on the Internet you need to provide a web address in your browser in order to reach it. For example, to reach Instagram, you type: https://instagram.com, to reach Facebook, you type: https://facebook.com, etc. 
+
+The web address specifically identifies your website. So, when you type the web address in your browser, the browser communicates with a computer called server and fetches the website.
+
+In order for your website to be reachable on the Internet, you will need to upload / host it to a server first. There are a couple of platforms that allow you to host your website on their servers. Such platform is Netlify.
+
+✅ Ever wondered what happens when you [type an address in the address bar in your browser](https://dev.to/wassimchegham/ever-wondered-what-happens-when-you-type-in-a-url-in-an-address-bar-in-a-browser-3dob)? 
+
+### 📝 Task - Sign up to Netlify
+
+1. Navigate to Netlify and [sign up](https://app.netlify.com/signup). 
+2. Since you have created a GitHub profile in the first part of this lesson, you can use that account to sign up. On the screen, choose "GitHub".
+
+![Sign up Netlify](./assets/netlify-signup.png)
+
+3. On the next screen authorize Netlify to access your GitHub information.
+
+![Authorize Netlify](./assets/netlify-authorize.png)
+
+4. That's it, you now have a Netlify account and you can upload your files to their servers.
+
+### 📝 Task - Import and deploy your website from GitHub
+
+Next, you are going to connect your website on GitHub with Netlify.
+
+1. Import your website files from GitHub by clicking on the button "Import from Git". 
+2. On the next screen choose the button "GitHub".
+
+![Import from Git](./assets/netlify-connect-provider.png)
+
+3. On the next screen authorize Netlify to access your GitHub profile.
+
+![Authorize Netlify](./assets/netlify-authorize-2.png)
+
+4. From the list of available projects on GitHub, choose your website project.
+
+![Choose project](./assets/netlify-chooserepo.png)
+
+5. On the next screen leave everything as is and click the button "Deploy site".
+6. Voilà! You website is now ✨live✨, you can visit it by following the web address assign to it by Netlify.
 
 That's it for this fourth lesson!
 
-You did it, you finished all lessons! Bravo!
+You did it, you finished ✨all lessons✨! Woohoo!
 
 
 
