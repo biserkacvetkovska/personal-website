@@ -50,14 +50,14 @@ Download [Git](https://git-scm.com/downloads) and install it on your computer.
 
 ### 📝 Task - Setup your local Git profile
 
-On your computer you have an application called "Command prompt" (Windows) or "Terminal" (Mac and Linux). 
+On your computer you have an application called "Git CMD" (Windows) or "Terminal" (Mac and Linux). 
 
-Open the "Command prompt" or the "Terminal" and type the following lines:
+Open the "Git CMD" or the "Terminal" and type the following lines:
 
 * ``` git config --global user.name "replace-with-your-github-username" ```
 * ``` git config --global user.email "replace-with-your-github-email" ```
 
-By executing these two lines in your "Command Prompt" or "Terminal" , you have connected Git with your GitHub profile. 
+By executing these two lines in your "Git CMD" or "Terminal" , you have connected Git with your GitHub profile. 
 
 ### 📝 Task - Create a repository on GitHub
 
@@ -74,7 +74,7 @@ On the next screen:
 
 If you remember in the first lesson, you created a folder on your computer called personal-website. This is the folder that has the code and assets for your website. This is the folder that you want to start tracking for changes.
 
-In order to do so, in "Command prompt" or "Terminal" navigate to this folder and type:
+In order to do so, in "Git CMD" or "Terminal" navigate to this folder and type:
 
 ``` git init ```
 
@@ -112,7 +112,7 @@ A Git repository is good on your computer, but at some point you want to have ba
 
 Remember you've already created a repository on GitHub, so the only thing you need to do is to connect your local Git repository with GitHub. The command `git remote add` will do just that.
 
-Before you type this command in your "Command prompt" or "Terminal", navigate to your newly created GitHub repository and find the URL of your repository.
+Before you type this command in your "Git CMD" or "Terminal", navigate to your newly created GitHub repository and find the URL of your repository.
 
 ![Repository URL](./assets/repository-htpps.png)
 
